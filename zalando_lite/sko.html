@@ -7,9 +7,10 @@
     <title>Zalando Light | Forside</title>
 </head>
 <body>
-    <header>
-        <img id="main-logo" src="img/zalando-logo.png" alt="Nettsted logo">
-        <nav class="flex-space-b">
+    <div id="grid-container">
+        <header id="global-header">
+            <img id="main-logo" src="img/zalando-logo.png" alt="Nettsted logo">
+            <nav class="flex-space-b">
             <ul class="flex-menu">
                 <li><a href="#">Nyheter</a></li>
                 <li><a href="#">Nordisk stil</a></li>
@@ -26,16 +27,8 @@
                 <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
                 <input type="submit" value="søk">
             </form>
-        </nav>
-    </header>
-    <main>
-        <nav>
-            <ul>
-                <li><a href="#">Dame ></a></li>
-                <li>Sko</li>
-            </ul>
-        </nav>
-        <h1>Sko til dame</h1>
+            </nav>
+        </header>
         <aside>
             <nav>
                 <ul>
@@ -52,9 +45,19 @@
                 </ul>
             </nav>
         </aside>
+        <main>
+            <nav>
+                <ul>
+                <li><a href="#">Dame ></a></li>
+                <li>Sko</li>
+            </ul>
+        </nav>
+        <h1>Sko til dame</h1>
+
         <section>
             <h2>Produkter</h2>
             <form>
+                
                 <select name="brand">
                     <option value="Polo Ralph Lauren">Polo Ralph Lauren</option>
                     <option value="Tommy Hilfiger">Tommy Hilfiger</option>
@@ -68,55 +71,56 @@
             </select>
          </form>
             <section>
-                <article>
+                <section class="flex-space-b">
+                <article class="product-card">
                     <img src="img/sko_ralphlauren.webp" alt="Ralph Lauren Heritage Aera Leather-Suede Sneaker">
                     <a href="#">Polo Ralph Lauren</a>
                     <a href="#"><h3>Aera Leather-Suede Sneaker</h3></a>
                     <p>1495 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/sko_ralphlauren.webp" alt="Ralph Lauren Heritage Aera Leather-Suede Sneaker">
                     <a href="#">Polo Ralph Lauren</a>
                     <a href="#"><h3>Aera Leather-Suede Sneaker</h3></a>
                     <p>1495 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/sko_ralphlauren.webp" alt="Ralph Lauren Heritage Aera Leather-Suede Sneaker">
                     <a href="#">Polo Ralph Lauren</a>
                     <a href="#"><h3>Aera Leather-Suede Sneaker</h3></a>
                     <p>1495 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/sko_ralphlauren.webp" alt="Ralph Lauren Heritage Aera Leather-Suede Sneaker">
                     <a href="#">Polo Ralph Lauren</a>
                     <a href="#"><h3>Aera Leather-Suede Sneaker</h3></a>
                     <p>1495 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/sko_ralphlauren.webp" alt="Ralph Lauren Heritage Aera Leather-Suede Sneaker">
                     <a href="#">Polo Ralph Lauren</a>
                     <a href="#"><h3>Aera Leather-Suede Sneaker</h3></a>
                     <p>1495 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/sko_ralphlauren.webp" alt="Ralph Lauren Heritage Aera Leather-Suede Sneaker">
                     <a href="#">Polo Ralph Lauren</a>
                     <a href="#"><h3>Aera Leather-Suede Sneaker</h3></a>
                     <p>1495 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/sko_ralphlauren.webp" alt="Ralph Lauren Heritage Aera Leather-Suede Sneaker">
                     <a href="#">Polo Ralph Lauren</a>
                     <a href="#"><h3>Aera Leather-Suede Sneaker</h3></a>
                     <p>1495 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/sko_ralphlauren.webp" alt="Ralph Lauren Heritage Aera Leather-Suede Sneaker">
                     <a href="#">Polo Ralph Lauren</a>
                     <a href="#"><h3>Aera Leather-Suede Sneaker</h3></a>
                     <p>1495 kr</p>
                 </article>
-                <article>
+                <article class="product-card">
                     <img src="img/sko_ralphlauren.webp" alt="Ralph Lauren Heritage Aera Leather-Suede Sneaker">
                     <a href="#">Polo Ralph Lauren</a>
                     <a href="#"><h3>Aera Leather-Suede Sneaker</h3></a>
@@ -126,5 +130,6 @@
         </section>
     </main>
     <footer>Zalando Light 2024</footer>
+    </div>
 </body>
 </html>
