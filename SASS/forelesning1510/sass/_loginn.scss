@@ -1,0 +1,19 @@
+@use 'colors' as *;
+@use 'mixins' as *;
+
+.blurred-effect{
+    backdrop-filter: blur(10);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+form{
+    background-color: $white;
+    color: $black;
+    @extend .blurred-effect;
+    @include flexbox (column, nowrap, 1rem);
+    @include box (600px , auto, 3rem, 30px);
+
+    input{
+        @include box (200px, auto, 1rem, 20px);
+        border: 1px solid $black;
+    }
+}
